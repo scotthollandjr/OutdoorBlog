@@ -1,3 +1,7 @@
-<img src={{blog.image}} class="blogPic">
-<h2>{{blog.title}}</h2>
-<h2>{{blog.author}}</h2>
+{{#link-to 'blog' blog.id}}
+<div class="blog-link">
+	<img src={{blog.image}} class="blogPic">
+	<h2>{{blog.title}}</h2>
+	<h2>{{blog.author}}</h2>
+</div>
+{{/link-to}}
