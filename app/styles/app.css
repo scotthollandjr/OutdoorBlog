@@ -37,7 +37,7 @@ body {
 	margin:10px;
 	text-align: left;
 	font-family: 'Finger Paint', cursive;
-	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 3px 0px #ccc;
 	background-color: #f7f4e9; 
 }
 
@@ -60,4 +60,13 @@ body {
 
 .blogImage {
 	width: 400px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: #666;
 }
