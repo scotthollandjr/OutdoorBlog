@@ -1,16 +1,39 @@
-<h1>{{model.title}}</h1>
-<img src={{model.image}} class="blogImage"/>
-<p>By</p>
-<h2>{{model.author}}</h2>
+<div class="blogPage row">
+	<div class="col-xs-2">
+	</div>
 
-<p>{{model.content}}</p>
+	<div class="col-xs-8">
+		<img src={{model.image}} class="blogImage"/>
+		
+		<h1>{{model.title}}</h1>
+		<h3>by: {{model.author}}</h3>
 
+		<p class="bodyContent">{{model.content}}</p>
+		<hr>
+	</div>
 
-<div class="commentDiv">
-	{{#each model.comments as |comment|}}
-		<div class="indivComment">{{comment.name}} says: {{comment.content}}</div>
-	{{/each}}
+	<div class="col-xs-2">
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-1">
+	</div>
+
+	<div class="col-xs-5">
+		{{new-comment addComment2="addComment3" blog=model}}
+	</div>
+
+	<div class="commentDiv col-xs-4">
+		{{#each model.comments as |comment|}}
+			<hr>
+			<div class="indivComment">{{comment.name}} says: {{comment.content}}</div>
+			<hr>
+		{{/each}}
+	</div>
+
+	<div class="col-xs-2">
+	</div>
 </div>
 
-{{new-comment addComment2="addComment3" blog=model}}
+
 

@@ -18,7 +18,7 @@ body {
 }
 
 .content {
-	background-color: #eee2d9;
+	background-color: #fff;
 	position: relative;
 	width: 100%;
 	height: 5000px;
@@ -37,12 +37,13 @@ body {
 	margin:10px;
 	text-align: left;
 	font-family: 'Finger Paint', cursive;
-	box-shadow: 2px 2px 3px 0px #ccc;
-	background-color: #f7f4e9; 
+	/*box-shadow: 2px 2px 3px 0px #ccc;
+	background-color: #000;*/
 }
 
-.blogDiv h2 {
+.blogDiv h2, h3 {
 	padding-left: .70em;
+	font-family: 'Roboto', sans-serif;
 }
 
 .blogPic {
@@ -59,7 +60,8 @@ body {
 }
 
 .blogImage {
-	width: 400px;
+	width: 500px;
+	border-radius: 25%;
 }
 
 a {
@@ -69,4 +71,21 @@ a {
 
 a:hover {
 	color: #666;
+}
+
+.blogPage {
+	font-family: 'Roboto', sans-serif;
+}
+
+.bodyContent {
+	text-align: left;
+}
+
+.commentDiv {
+	background-color: #fcfcfc;
+}
+
+.footer {
+	clear: both;
+	margin-top: 50%;
 }
