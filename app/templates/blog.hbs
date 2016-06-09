@@ -4,3 +4,13 @@
 <h2>{{model.author}}</h2>
 
 <p>{{model.content}}</p>
+
+
+<div class="commentDiv">
+	{{#each model.comments as |comment|}}
+		<div class="indivComment">{{comment.name}} says: {{comment.content}}</div>
+	{{/each}}
+</div>
+
+{{new-comment addComment2="addComment3" blog=model}}
+
