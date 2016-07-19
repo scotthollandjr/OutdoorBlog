@@ -1,7 +1,6 @@
 # Outdoors
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A blog project in ember for the Epicodus JavaScript course. Admin can update blog with new entries and show the most recent on the front page.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/theAppanaut/OutdoorBlog.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
